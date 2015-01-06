@@ -29,15 +29,20 @@
 
   			<!-- Nav tabs -->
   			<ul class="nav nav-tabs" role="tablist" id='lemons'>
-    			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
   			</ul>
 
  			<!-- Tab panes -->
   			<div class="tab-content">
-    			<div role="tabpanel" class="tab-pane active" id="home">How could this happen to me?</div>
-    			<div role="tabpanel" class="tab-pane" id="profile">I've made my mistakes...</div>
+    				<div role="tabpanel" class="tab-pane active" id="home">How could this happen to me?</div>
+    				<div role="tabpanel" class="tab-pane" id="profile">I've made my mistakes...</div>
   			</div>
+  			<script>
+  				$(function () {
+    					$('#lemons a:last').tab('show')
+  				})
+			</script>
 
 		</div>
  		<script src="js/script.js"></script>
